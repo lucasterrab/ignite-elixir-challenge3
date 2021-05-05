@@ -38,3 +38,16 @@ The report generated from the file must be in the following format:
     }
 }
 ```
+
+
+### Usage
+
+**Without parallelism**
+```elixir
+iex> GenReportChallenge.build("report_complete.csv")
+```
+
+**With parallelism**
+```elixir
+iex> GenReportChallenge.build_from_many(["report_1.csv", "report_2.csv", "report_3.csv"])
+```
